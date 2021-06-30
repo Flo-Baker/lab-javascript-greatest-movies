@@ -19,9 +19,9 @@ function howManyMovies(movies) {
     return 0;
   }
   const spielbergMovies = movies.filter(( moviesOfSpielberg ) => {
-    return (moviesOfSpielberg.director === 'Steven Spielberg') 
+    return (moviesOfSpielberg.director === 'Steven Spielberg' && moviesOfSpielberg.genre.includes('Drama')) 
   })
-  return spielbergMovies;
+  return spielbergMovies.length
 }
 
 /*
